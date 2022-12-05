@@ -17,18 +17,13 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <style type="text/css">
-    #ttlink{float: left;
-            width: 60px;}
-    #ttlink{float: left;
-            width: 100;}
-    /* 强制不换行 */
+    #ttlinkpaper{float: left; width: 57px;}
+    #ttlinkcode{float: left; width: 50px;}
+    #ttlinkproj{float: left; width: 64px;}
+
     .nowrap{white-space:nowrap;}
-    /* 允许单词内断句，首先会尝试挪到下一行，看看下一行的宽度够不够，
-    不够的话就进行单词内的断句 */
     .breakword{word-wrap: break-word;}
-    /* 断句时，不会把长单词挪到下一行，而是直接进行单词内的断句 */
     .breakAll{word-break:break-all;}            
-    /* 超出部分显示省略号 */
     .ellipsis{text-overflow:ellipsis;overflow:hidden;}
     /* p{display: inline;} */
   </style>
@@ -57,7 +52,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="images/picture.jpg" alt="Kaizhi Yang" width="80">
+          <img src="images/picture.png" alt="Kaizhi Yang" width="80">
         </figure>
 
         <div class="info-content">
@@ -143,24 +138,25 @@
       <article class="about  active" data-page="about">
 
         <section class="about-text">
-          <h3 class="h3 service-title">Bio</h3>
+          <h3 class="h3 service-title">About</h3>
           <p style="text-align:justify">
-            I am a 2nd year Master student at University Of Science And Technology Of China, under the supervision of A.P. Xuejin Chen.
-            I received my Bachelor's degree from Nanjing University of Aeronautics and Astronautics in 2019.
+            I am a 3nd year Ph.D. student at University of Science and Technology of China, under the supervision of Prof. Xuejin Chen and Prof. Xiaoyan Sun.
+            Prior to joining USTC, I received my Bachelor's degree from Nanjing University of Aeronautics and Astronautics. <br>
             My research interest include 3D vision, graphics and deep learning.
+            In particular, I am interested in structured perception and modeling in 3D environments.
           </p>
         </section>
 
-        <section class="about-text">
+        <!-- <section class="about-text">
           <h3 class="h3 service-title">News</h3>
           <p style="text-align:justify">
             Oct. 2021: Our paper "Learning Scale-Adaptive Representations for Point-Level LiDAR Semantic Segmentation" has been accepted by 3DV 2021. <br>
             Apr. 2021: Our paper "Unsupervised Learning for Cuboid Shape Abstraction via Joint Segmentation from Point Clouds" has been accepted by ACM SIGGRAPH 2021.
           </p>
-        </section>
+        </section> -->
 
         <section class="about-text">
-          <h3 class="h3 service-title">Publications</h3>
+          <h3 class="h3 service-title">Manuscripts</h3>
 
           <div class="paper" style="width:25%; height: 200px; float:left;">
             <img src="papers/MovingParts.PNG" width="200">
@@ -171,9 +167,15 @@
             </p>
               <strong>Kaizhi Yang</strong>, Xiaoshuai Zhang, Zhiao Huang, Xuejin Chen, Zexiang Xu, Hao Su <br>
               Arxiv <br>
-              <a href="https://silenkzyoung.github.io/MovingParts-WebPage/" id="ttlink" target="_blank">[project]</a>
+              <a href="https://silenkzyoung.github.io/MovingParts-WebPage/" id="ttlinkproj" target="_blank">[project]</a>
+              <a href="https://silenkzyoung.github.io/MovingParts-WebPage/" id="ttlinkpaper" target="_blank">[paper]</a>
+              <a href="https://silenkzyoung.github.io/MovingParts-WebPage/" id="ttlinkcode" target="_blank">[code]</a>  
           </div>
 
+        </section>
+
+        <section class="about-text">
+          <h3 class="h3 service-title">Publications</h3>
 
           <div class="paper" style="width:25%; height: 200px; float:left;">
             <img src="papers/ScaleAdaptiveSegmentation.PNG" width="200">
@@ -184,7 +186,7 @@
             </p>
             Tongfeng Zhang, Xuejin Chen, <strong>Kaizhi Yang</strong><br>
             3DV 2021 <br>
-            <a href="https://3dv2021.surrey.ac.uk/papers/412.html" id="ttlink" target="_blank">[paper]</a>
+            <a href="https://3dv2021.surrey.ac.uk/papers/412.html" id="ttlinkpaper" target="_blank">[paper]</a>
           </div>
 
 
@@ -197,8 +199,8 @@
             </p>
             <strong>Kaizhi Yang</strong>, Xuejin Chen <br>
             SIGGRAPH 2021 <br>
-            <a href="https://arxiv.org/abs/2106.03437" id="ttlink" target="_blank">[paper]</a>
-            <a href="https://github.com/SilenKZYoung/CuboidAbstractionViaSeg" id="ttlink" target="_blank">[code]</a>
+            <a href="https://arxiv.org/abs/2106.03437" id="ttlinkpaper" target="_blank">[paper]</a>
+            <a href="https://github.com/SilenKZYoung/CuboidAbstractionViaSeg" id="ttlinkcode" target="_blank">[code]</a>
           </div>
 
 
@@ -211,14 +213,14 @@
             </p>
             <strong>Kaizhi Yang</strong>, Jintao Lu, Siyu Hu, Xuejin Chen <br>
             MMM 2021 <br>
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-67835-7_4" id="ttlink" target="_blank">[paper]</a>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-67835-7_4" id="ttlinkpaper" target="_blank">[paper]</a>
           </div>
 
         </section>
 
 
         <section class="timeline">
-          <h3 class="h3 service-title">Resume</h3>
+          <h3 class="h3 service-title">Experiences</h3>
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -230,40 +232,31 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">University of Science and Technology of China</h4>
-              <span>2019 — Present</span>
-              <p class="timeline-text">PhD student <br></p> 
-              <p class="timeline-text">Advisor: Prof. Xuejin Chen </p>
+              <h4 class="h4 timeline-item-title">visiting Ph.D. researcher, UC San Diego (Remote)</h4>
+              <span>2022 — Present</span>
+              <p class="timeline-text">Advisor: Prof. Hao Su</p>
               
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Nanjing University of Aeronautics and Astronautics</h4>
+              <h4 class="h4 timeline-item-title">Ph.D. student, University of Science and Technology of China</h4>
+              <span>2019 — Present</span>
+              <p class="timeline-text">Advisor: Prof. Xuejin Chen & Prof. Xiaoyan Sun</p>
+              
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bachelor, Nanjing University of Aeronautics and Astronautics</h4>
               <span>2015 — 2019</span>
-              <p class="timeline-text">Bachelor</p>
             </li>
           </ol>
-
         </section>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h4">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">visiting Ph.D. researcher, UC San Diego (Remote)</h4>
-              <span>2022 — Present</span>
-              <p class="timeline-text">
-                Mentor: Prof. Hao su
-              </p>
-            </li>
-          </ol>
-
+        <section class="about-text">
+          <h3 class="h3 service-title">Teaching</h3>
+          <p style="text-align:justify">
+            &#9670 Teaching Assistant: Image Understanding, University of Science and Technology of China, Winter 2022
+          </p>
         </section>
 
         <!--
@@ -289,7 +282,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <!-- <article class="resume" data-page="resume">
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
@@ -306,14 +299,6 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">University of Science and Technology of China</h4>
-              <span>2019 — Present</span>
-              <p class="timeline-text">PhD student</p>
-              <p class="timeline-text">Advisor: Prof. Xuejin Chen </p>
-              
-            </li>
-
-            <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Nanjing University of Aeronautics and Astronautics</h4>
               <span>2015 — 2019</span>
               <p class="timeline-text">Bachelor</p>
@@ -322,26 +307,7 @@
 
         </section>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">visiting Ph.D. researcher, UC San Diego (Remote)</h4>
-              <span>2022 — Present</span>
-              <p class="timeline-text">
-                Mentor: Prof. Hao su
-              </p>
-            </li>
-          </ol>
-
-        </section>
-      </article>
+      </article> -->
 
       <!--
         - #BLOG
